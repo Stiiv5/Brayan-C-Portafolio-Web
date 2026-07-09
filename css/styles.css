@@ -41,8 +41,7 @@ body.light-mode {
 }
 
 html, body {
-    max-width: 100%;
-    /* overflow-x: hidden; */
+    max-width: 100%;    
     scroll-behavior: smooth;
 }
 
@@ -50,20 +49,20 @@ html, body {
    ESTRUCTURA BASE DEL FONDO Y EL MARCO INTERNO
 ========================================================================== */
 body {
-    background-color: var(--bg-principal); /* Fondo total de la pantalla (#0B0501) */
+    background-color: var(--bg-principal); 
     color: var(--texto-principal);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 12px; /* Este padding crea la separación del "marco" exterior en móvil */
+    padding: 12px;
 }
 
-/* El contenedor envolvente que emula el linezo/frame */
+
 .app-lienzo {
     background-color: var(--bg-superficie);
     width: 100%;
-    max-width: 366px;
+    max-width: 680px;
     min-height: calc(100vh - 24px);
     border-radius: var(--radius-lienzo);
     border: 1px solid var(--borde);
@@ -558,6 +557,7 @@ body.light-mode .navbar {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background-color: var(--borde);
 }
 
 .project-img {
@@ -567,6 +567,8 @@ body.light-mode .navbar {
     opacity: 0.85;
     transition: opacity 0.3s ease;
     border-radius: var(--radius-lienzo);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    
 }
 
 .project-badge {
@@ -864,7 +866,7 @@ body.light-mode .about-code-window {
 .contact-section {
     display: flex;
     flex-direction: column;
-    padding: 60px 16px 20px 16px;
+    padding: 40px 16px 20px 16px;
     margin-top: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -1068,4 +1070,408 @@ body.light-mode .social-link-item:hover {
     color: var(--texto-principal);
     opacity: 0.7;
     letter-spacing: 0.02em;
+}
+
+/*
+=================================================
+MEDIA PARA ESTIRAR HASTA TAMAÑO 500PX TABLETS
+================================================
+
+*/
+
+@media (min-width: 500px){
+
+    .app-lienzo {
+        padding: 28px;
+    }
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    
+    .hero-description {
+        padding: 20px;
+        font-size: 1.08rem;
+    }
+
+    .btn-primary {
+        padding: 16px 28px;
+    }
+
+    .btn-secondary {
+        padding: 16px 28px;
+    }
+
+    .avatar-wrapper {
+        width: 280px;
+        height: 280px;
+    }
+
+    .avatar-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* -------PROJECTS------- */
+
+    .projects-section-title {
+        font-size: 2.4rem;
+    }
+
+    .projects-container {
+        padding: 60px 32px 0 32px;
+    }
+
+    /* -------ABOUT----------*/
+
+    .about-section-title {
+        font-size: 2.4rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .about-value-card {
+        padding: 32px;
+    }
+
+    .card-number {
+        font-size: 1rem;  
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .about-section-title {
+        font-size: 2.4rem;
+    }
+
+    .contact-pitch {
+        font-size: 17px;
+
+    }
+
+    .contact-subtitle {
+        font-size: 15px;
+
+    }
+
+    .about-content {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .about-code-window {
+        width: 80%;
+        max-width: 80%;
+
+    }
+
+    .code-window-body pre, 
+    .code-window-body code {
+        font-size: 0.9rem;
+    }
+
+}
+
+
+/* ==========================================================================
+   MEDIA QUERY: TABLETS Y LAPTOPS CHICAS (Transición Fluida)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 24px;
+    }
+
+    .app-lienzo {
+        max-width: 960px;
+        padding: 32px;
+    }
+
+    .navbar {
+        padding: 12px 24px;
+        bottom: 40px;
+        justify-content: space-around;
+    }   
+
+    .hero-title {
+        text-align: center;
+        padding: 0 24px;
+    }
+
+    .hero-description {
+        padding: 0 40px;
+        font-size: 1.08rem;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 24px auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+
+    .avatar-wrapper {
+        margin: 0 auto;
+    }
+
+    .circular-text {
+        transform: scale(1.27);
+        transform-origin: center;
+    }
+
+    .hero-footer-stack {
+        margin-top: 48px;
+    }
+
+    /* ------------ PROJECTS */
+
+    .projects-container {
+        padding: 80px 24px 0 24px;
+        gap: 48px;
+    }
+
+    .projects-section-title{
+        font-size: 2.4rem;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .project-card {
+        height: 100%;
+    }
+
+    .project-image-wrapper {
+        height: 220px;
+    }
+
+    .project-info {
+        font-size: 1.35rem;
+    }
+
+    .project-description {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        margin-bottom: 8px;
+    }
+
+    .project-actions {
+        margin-top: auto;
+        gap: 12px;
+    }
+
+    .project-btn {
+        padding: 12px;
+        font-size: 0.88rem;
+        border-radius: 8px;
+    }
+
+    /* -------- ABOUT ME ---------- */
+
+    .about-container {
+        padding: 80px 32px;
+        gap: 56px;
+    }
+
+    .about-section-title {
+        letter-spacing: -0.8px;
+    }
+
+    .about-content {
+        gap: 48px;
+    }
+
+    .about-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .about-description {
+        font-size: 1.05rem;
+    }
+
+    .about-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 32px;
+    }
+
+    .about-value-card {
+        padding: 28px;
+        height: 100%;
+    }
+
+
+    /* ----------- CONTACT ------- */
+
+    .contact-section {
+        padding: 60px 32px 32px 32px;
+        margin-top: 40px;
+    }
+
+    .contact-pitch {
+        font-size: 1.25rem;
+        line-height: 1.5;
+        max-width: 600px;
+        margin: 0 auto 12px auto;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 40px;
+    }
+
+    .contact-form {
+        gap: 28px;
+        max-width: 680px;
+        margin: 0 auto 40px auto;        
+    }
+
+    .form-input {
+        font-size: 15px;
+    }
+
+    .form-textarea {
+        min-height: 90px;
+        max-height: 160px;
+    }
+
+    .contact-socials-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        max-width: 680px;
+        margin: 16px auto 0 auto;
+    }
+
+    .social-link-item {
+        padding: 16px 20px;
+        font-size: 14px;
+    }
+
+    /* ------------ FOOTER -------- */
+    .app-footer {
+        padding: 48px 0 16px 0;
+    }
+
+    .footer-credits {
+        font-size: 12px;
+    }
+
+}
+
+/* ==========================================================================
+   FASE 3: DESKTOP PREMIUM (A partir de 1024px) - SOLUCIÓN ALINEACIÓN REAL
+========================================================================== */
+@media (min-width: 1024px) {
+    
+    .app-lienzo {
+        max-width: 1440px;
+        padding: 48px;
+        position: relative;
+    }
+
+    .top-header {
+        display: block;
+        width: 100%;
+        height: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .social-btn {
+        width: 48px;
+        height: 48px;
+        font-size: 1rem;        
+    }
+
+    .social-btn svg {
+        width: 22px;
+        height: 22px;
+    }
+        
+
+    .header-socials {
+        position: absolute;
+        top: 3px;
+        z-index: 1000;
+        left: 50px;
+        gap: 12px;
+        height: 22px;
+    }
+
+        
+    .header-controls {
+        position: absolute;
+        z-index: 1000; 
+        display: flex;
+        gap: 12px;
+        top: 3px;
+        right: 50px;
+    }
+
+    .control-btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;        
+    }
+    
+    .navbar {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 24px; 
+        z-index: 999;
+        
+        
+        width: 100%;
+        max-width: 620px;
+        margin: 0 auto 64px auto; 
+        border-radius: 40px;
+        
+        padding: 12px 20px;
+     
+        background-color: rgba(18, 11, 7, 0.60); 
+        border: 1px solid rgba(255, 255, 255, 0.16); 
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Contraste en Light Mode */
+    body.light-mode .navbar {
+        background-color: rgba(255, 255, 255, 0.70);
+        border: 1px solid rgba(11, 5, 1, 0.15);
+        box-shadow: 0 16px 40px rgba(11, 5, 1, 0.12);
+    }
+
+    /* Tamaños de tipografía para Desktop */
+    .nav-brand {
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+    }
+
+    .nav-links-left, .nav-links-right {
+        gap: 50px;
+    }
+
+    .nav-links-left a, .nav-links-right a {
+        font-size: 0.95rem;
+        letter-spacing: 0.3px;
+    }
 }

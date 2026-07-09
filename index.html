@@ -4,59 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Personal</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/Portafolio-Brayan-C/css/styles.css" />
   </head>
   <body>
     <div class="app-lienzo" id="inicio">
     <!-- ZONA DE LA NAVBAR HEADER-->
-    <!-- Botones de redes -->
+    <!-- Botones de redes -->    
     <header class="top-header">
         <div class="header-socials">
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect x="2" y="9" width="4" height="12"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
                 </svg>
             </a>
-            
+        
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
             </a>
-        </div>       
+        </div>
 
-      <div class="header-controls">
-        <button
-          id="lang-toggle"
-          class="control-btn"
-          aria-label="Toggle Language"
-        >
-          EN
-        </button>
-        <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">
-          🌙
-        </button>
-      </div>
-    </header>
+        <div class="header-controls">
+            <button id="lang-toggle" class="control-btn" aria-label="Toggle Language">EN</button>
+            <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">🌙</button>
+        </div>
+    </header>     
 
-    <!-- Bento navBar -->
-        <nav class="navbar">
-            <div class="nav-links-left">
-                <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
-                <a href="#projects" data-es="Proyectos" data-en="Projects">
-                    Proyectos</a>
-            </div>
+    <nav class="navbar">
+        <div class="nav-links-left">
+            <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+            <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
+        </div>
 
-            <div class="nav-brand">BC</div>
+        <div class="nav-brand">BC</div>
 
-            <div class="nav-links-right">
-                <a href="#about" data-es="Sobre Mí" data-en="About me">Sobre Mí</a>
-                <a href="#contact" data-es="Contacto" data-en="Contacto">Contacto</a>
-            </div>
-      </nav>
+        <div class="nav-links-right">
+            <a href="#about" data-es="Sobre Mí" data-en="About me">Sobre Mí</a>
+            <a href="#contact" data-es="Contacto" data-en="Contacto">Contacto</a>
+        </div>
+    </nav>
 
+    
     <!-- ZONA DEL HERO MAIN CONTAINER -->
     <main class="hero-container">
       <!-- PARRAFO DE TEXTOS A LA IZQUIERDA DEL HEADER -->
@@ -102,7 +93,7 @@
                     </text>
                 </svg>
                 <div class="avatar-photo">
-                    <img src="/source/Foto_BS.jpg" alt="Brayan Castañeda" class="avatar-img">
+                    <img src="/Portafolio-Brayan-C/source/Foto_BS.jpg" alt="Brayan Castañeda" class="avatar-img">
                 </div>
             </div>
         </section>
@@ -140,7 +131,7 @@
 
             <article class="project-card">
                 <div class="project-image-wrapper">
-                    <img src="/source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
+                    <img src="/Portafolio-Brayan-C/source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
                     <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
                 </div>
 
@@ -173,7 +164,7 @@
 
             <article class="project-card">
                 <div class="project-image-wrapper">
-                    <img src="/source/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
+                    <img src="/Portafolio-Brayan-C/source/luke-chesser-JKUTrJ4vK00-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
                     <span class="project-badge" data-es="Desarrollo Web" data-en="Web Development">Desarrollo Web</span>
                 </div>
                 
@@ -339,7 +330,7 @@
         </p>
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script src="/Portafolio-Brayan-C/js/main.js"></script>
     </div>
   </body>
 </html>

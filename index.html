@@ -1,494 +1,598 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
+
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Personal</title>
-    <link rel="stylesheet" href="/Portafolio-Brayan-C/css/styles.css" />
-  </head>
-  <body>
+
+    <meta name="description"
+        content="Portafolio de Brayan Castañeda, desarrollador de software especializado en desarrollo web con HTML, CSS, JavaScript, Python y SQL." />
+
+    <meta name="theme-color" content="#FF6803">
+    <meta name="author" content="Brayan Castañeda">
+    <meta name="robots" content="index, follow">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/source/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/source/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/source/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/source/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/source/favicon_io/android-chrome-512x512.png">
+    <link rel="manifest" href="/source/favicon_io/site.webmanifest">
+
+    <title>Brayan Castañeda | Software Developer</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+
+<body>
+
     <div class="app-lienzo" id="inicio">
-    <!-- ZONA DE LA NAVBAR HEADER-->
-    <!-- Botones de redes -->    
-    <header class="top-header">
-        <div class="header-socials">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-            </a>
-        
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-            </a>
-        </div>
+        <!-- ==========================
+                HEADER
+    =========================== -->
+        <header class="top-header">
+            <div class="header-socials">
+                <a href="www.linkedin.com/in/brayan-castañeda-522a55236" target="_blank" rel="noopener noreferrer"
+                    class="social-btn" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
 
-        <div class="header-controls">
-            <button id="lang-toggle" class="control-btn" aria-label="Toggle Language">EN</button>
-            <button id="theme-toggle" class="control-btn" aria-label="Toggle theme">🌙</button>
-        </div>
-    </header>     
-
-    <nav class="navbar">
-        <div class="nav-links-left">
-            <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
-            <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
-        </div>
-
-        <div class="nav-brand">BC</div>
-
-        <div class="nav-links-right">
-            <a href="#about" data-es="Sobre Mí" data-en="About me">Sobre Mí</a>
-            <a href="#contact" data-es="Contacto" data-en="Contacto">Contacto</a>
-        </div>
-    </nav>
-
-    
-    <!-- ZONA DEL HERO MAIN CONTAINER -->
-    <main class="hero-container">
-      <!-- PARRAFO DE TEXTOS A LA IZQUIERDA DEL HEADER -->
-
-      <div class="hero-split">
-
-        <section class="hero-left">
-            <h1 class="hero-title">
-                <span
-                data-es="Diseño Interfaces que funcionan."
-                data-en="Designing interfaces that work."
-                >Diseño interfaces que funcionan.</span>
-                <br/>
-                <span
-                class="text-orange"
-                data-es="Programo soluciones que escalan."
-                data-en="I code solutions that scale."
-                >Programo soluciones que escalan.</span>
-            </h1>
-
-            <p
-                class="hero-description"
-                data-es="Hola, Soy Brayan Castañeda. Desarrollador enfocado en crear experiencias web interactivas, esteticas y de alto rendimiento"
-                data-en="Hello, My name is Brayan Castañeda, Developer focused on creating interactive, aesthetic, and high-performance web experiences."
-                >
-                Hola, Soy Brayan Castañeda. Desarrollador enfocado en crear
-                experiencias web interactivas, esteticas y de alto rendimiento.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary" data-es="Ver Proyectos" data-en="My Projects">Ver Proyectos</a>
-                <a href="#" class="btn-secondary" data-es="Descargar CV" data-en="Download CV">Descargar CV</a>
-            </div>        
-        </section>
-
-        <section class="hero-right">
-            <div class="avatar-wrapper">
-                <svg class="circular-text" viewBox="0 0 200 200" width="200" height="200">
-                    <path id="textPath" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="transparent"/>
-                    <text>
-                        <textPath href="#textPath" class="svg-text" data-es=" • UI/UX DESIGNER • FRONTEND DEVELOPER • B.C • " data-en=" • UI/UX DESIGNER • FRONTEND DEVELOPER • B.C • "> • UI/UX DESIGNER • FRONTEND DEVELOPER • B.C •
-                        </textPath>
-                    </text>
-                </svg>
-                <div class="avatar-photo">
-                    <img src="/Portafolio-Brayan-C/source/Foto_BS.jpg" alt="Brayan Castañeda" class="avatar-img">
-                </div>
-            </div>
-        </section>
-
-      </div>
-
-      <section class="hero-footer-stack">
-        <p class="stack-label">// TECH STACK</p>
-        <div class="stack-flex">
-            <span class="tech-badge">HTML</span>
-            <span class="tech-badge">CSS</span>
-            <span class="tech-badge">JavaScript</span>
-            <span class="tech-badge">TypeScript</span>
-            <span class="tech-badge">PYTHON</span>
-            <span class="tech-badge">Figma</span>
-        </div>
-      </section>
-
-      <div class="scroll-indicator">
-        <div class="scroll-mouse">
-            <div class="scroll-wheel"></div>
-        </div>
-      </div>
-    </main>
-
-    <section id="projects" class="projects-container">
-
-        <div class="projects-header">
-            <h2 class="projects-section-title">
-                <span data-es="Proyectos" data-en="Featured ">Proyectos </span><span class="text-orange" data-es=" Destacados" data-en="Projects">Destacados</span>
-            </h2>
-        </div>
-
-        <div class="projects-grid">
-
-            <article class="project-card">
-                <div class="project-image-wrapper">
-                    <img src="/Portafolio-Brayan-C/source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
-                    <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
-                </div>
-
-                <div class="project-info">
-                    <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce" data-en="E-Commerce Platform Redesign">
-                        Rediseño de plataforma E-Commerce
-                    </h3>
-
-                    <p class="project-description"
-                        data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
-                        data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
-                        Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios.
-                    </p>
-
-                    <div class="project-tags">
-                        <span class="project-tech-badge">Figma</span>
-                        <span class="project-tech-badge">HTML</span>
-                        <span class="project-tech-badge">CSS</span>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-sub" aria-label="GitHub Repository">
-                        <span>Code</span>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-image-wrapper">
-                    <img src="/Portafolio-Brayan-C/source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
-                    <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
-                </div>
-
-                <div class="project-info">
-                    <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce" data-en="E-Commerce Platform Redesign">
-                        Rediseño de plataforma E-Commerce
-                    </h3>
-
-                    <p class="project-description"
-                        data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
-                        data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
-                        Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios.
-                    </p>
-
-                    <div class="project-tags">
-                        <span class="project-tech-badge">Figma</span>
-                        <span class="project-tech-badge">HTML</span>
-                        <span class="project-tech-badge">CSS</span>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-sub" aria-label="GitHub Repository">
-                        <span>Code</span>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-image-wrapper">
-                    <img src="/Portafolio-Brayan-C/source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
-                    <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
-                </div>
-
-                <div class="project-info">
-                    <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce" data-en="E-Commerce Platform Redesign">
-                        Rediseño de plataforma E-Commerce
-                    </h3>
-
-                    <p class="project-description"
-                        data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
-                        data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
-                        Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios.
-                    </p>
-
-                    <div class="project-tags">
-                        <span class="project-tech-badge">Figma</span>
-                        <span class="project-tech-badge">HTML</span>
-                        <span class="project-tech-badge">CSS</span>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-sub" aria-label="GitHub Repository">
-                        <span>Code</span>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-card">
-                <div class="project-image-wrapper">
-                    <img src="/Portafolio-Brayan-C/source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto" class="project-img">
-                    <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
-                </div>
-
-                <div class="project-info">
-                    <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce" data-en="E-Commerce Platform Redesign">
-                        Rediseño de plataforma E-Commerce
-                    </h3>
-
-                    <p class="project-description"
-                        data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
-                        data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
-                        Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios.
-                    </p>
-
-                    <div class="project-tags">
-                        <span class="project-tech-badge">Figma</span>
-                        <span class="project-tech-badge">HTML</span>
-                        <span class="project-tech-badge">CSS</span>
-                    </div>
-
-                    <div class="project-actions">
-                        <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-sub" aria-label="GitHub Repository">
-                        <span>Code</span>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-    </section> 
-
-
-
-    <!-- ABOUT ME SECTION -->
-
-    <section id="about" class="about-container">
-        
-
-        <div class="about-header">
-            <h2 class="about-section-title">
-                <span data-es="Sobre " data-en="About ">Sobre </span><span class="text-orange" data-es="Mí" data-en="Me">Mí</span>
-            </h2>
-        </div>
-
-        <div class="about-content">
-            <div class="about-text-block">
-                <h3 class="about-subtitle" data-es="¡Hola! Soy Brayan" data-en="Hi! I'm Brayan">¡Hola! Soy Brayan</h3>
-                <p class="about-description" 
-                   data-es="Un desarrollador apasionado por transformar ideas en productos digitales impactantes. No me limito a escribir código; me enfoco en diseñar experiencias intuitivas, soluciones altamente funcionales y arquitecturas limpias que garanticen la escalabilidad técnica. Mi meta es aportar valor real optimizando la intersección exacta entre la ingeniería de software y el diseño UI/UX."
-                   data-en="A developer passionate about transforming ideas into impactful digital products. I don't just write code; I focus on designing intuitive experiences, highly functional solutions, and clean architectures that guarantee technical scalability. My goal is to deliver true value by optimizing the exact intersection between software engineering and UI/UX design.">
-                    Un desarrollador apasionado por transformar ideas en productos digitales impactantes. No me limito a escribir código; me enfoco en diseñar experiencias intuitivas, soluciones altamente funcionales y arquitecturas limpias que garanticen la escalabilidad técnica. Mi meta es aportar valor real optimizando la intersección exacta entre la ingeniería de software y el diseño UI/UX.
-                </p>
+                <a href="https://github.com/Stiiv5" target="_blank" rel="noopener noreferrer" class="social-btn"
+                    aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
             </div>
 
-            <div class="about-code-window">
-                <div class="code-window-header">
-                    <div class="code-dots">
-                        <span class="dot dot-red"></span>
-                        <span class="dot dot-yellow"></span>
-                        <span class="dot dot-green"></span>
+            <div class="header-controls">
+                <button type="button" id="lang-toggle" class="control-btn" aria-label="Toggle Language">EN</button>
+                <button type="button" id="theme-toggle" class="control-btn" aria-label="Toggle theme">🌙</button>
+            </div>
+        </header>
+
+        <!-- ==========================
+            NAVIGATION
+    =========================== -->
+
+        <nav class="navbar">
+            <div class="nav-links-left">
+                <a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a>
+                <a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a>
+            </div>
+
+            <a href="#inicio" class="nav-brand">BC</a>
+
+            <div class="nav-links-right">
+                <a href="#about" data-es="Sobre Mí" data-en="About me">Sobre Mí</a>
+                <a href="#contact" data-es="Contacto" data-en="Contacto">Contacto</a>
+            </div>
+        </nav>
+
+        <!-- ==========================
+    ZONA DEL HERO MAIN CONTAINER
+    =========================== -->
+        <!--  -->
+        <main class="hero-container">
+            <!-- PARRAFO DE TEXTOS A LA IZQUIERDA DEL HEADER -->
+
+            <div class="hero-split">
+
+                <section class="hero-left">
+                    <h1 class="hero-title">
+                        <span data-es="Diseño Interfaces que funcionan."
+                            data-en="Designing interfaces that work.">Diseño interfaces que funcionan.</span>
+                        <br />
+                        <span class="text-orange" data-es="Programo soluciones que escalan."
+                            data-en="I code solutions that scale.">Programo soluciones que escalan.</span>
+                    </h1>
+
+                    <p class="hero-description"
+                        data-es="Hola, Soy Brayan Castañeda. Desarrollador de software enfocado en crear experiencias web interactivas, estéticas y de alto rendimiento"
+                        data-en="Hello, My name is Brayan Castañeda, Software developer focused on creating interactive, aesthetic, and high-performance web experiences.">
+                        Hola, Soy Brayan Castañeda. Desarrollador de software enfocado en crear
+                        experiencias web interactivas, estéticas y de alto rendimiento.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary" data-es="Ver Proyectos" data-en="My Projects">Ver
+                            Proyectos</a>
+                        <a href="#" class="btn-secondary" data-es="Descargar CV" data-en="Download CV">Descargar CV</a>
                     </div>
-                    <span class="code-tab-title">brayan.js</span>
+                </section>
+
+
+                <!-- PARRAFO DE TEXTOS A LA DERECHA DEL HEADER -->
+                <section class="hero-right">
+                    <div class="avatar-wrapper">
+                        <svg class="circular-text" viewBox="0 0 200 200" width="200" height="200">
+                            <path id="textPath" d="M 100, 100 m -80, 0 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                                fill="transparent" />
+                            <text>
+                                <textPath href="#textPath" class="svg-text"
+                                    data-es=" • UI/UX DESIGNER • FRONTEND DEVELOPER • B.C • "
+                                    data-en=" • UI/UX DESIGNER • FRONTEND DEVELOPER • B.C • "> • UI/UX DESIGNER •
+                                    FRONTEND DEVELOPER • B.C •
+                                </textPath>
+                            </text>
+                        </svg>
+                        <div class="avatar-photo">
+                            <img src="/source/Foto_BS.jpg" alt="Brayan Castañeda" class="avatar-img" loading="eager"
+                                decoding="async">
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+            <!-- ==========================
+            TECH STACK
+    =========================== -->
+            <section class="hero-footer-stack">
+                <p class="stack-label">// TECH STACK</p>
+                <ul class="stack-flex">
+                    <li class="tech-badge">HTML</li>
+                    <li class="tech-badge">CSS</li>
+                    <li class="tech-badge">JavaScript</li>
+                    <li class="tech-badge">TypeScript</li>
+                    <li class="tech-badge">PYTHON</li>
+                    <li class="tech-badge">Figma</li>
+                </ul>
+            </section>
+
+
+            <!-- ==========================
+            SCROLL INDICATOR
+    =========================== -->
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
                 </div>
-                <div class="code-window-body">
-                    <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+            </div>
+        </main>
+
+
+
+        <!-- ==========================
+            PROJECTS SECTION
+    =========================== -->
+        <section id="projects" class="projects-container">
+
+            <header class="projects-header">
+                <h2 class="projects-section-title">
+                    <span data-es="Proyectos" data-en="Featured ">Proyectos </span><span class="text-orange"
+                        data-es=" Destacados" data-en="Projects">Destacados</span>
+                </h2>
+            </header>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Rediseño de Plataforma E-Commerce"
+                            class="project-img" loading="lazy" decoding="async">
+                        <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce"
+                            data-en="E-Commerce Platform Redesign">
+                            Rediseño de plataforma E-Commerce
+                        </h3>
+
+                        <p class="project-description"
+                            data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
+                            data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
+                            Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en
+                            simplificar el proceso de pago y mejorar la retención de usuarios.
+                        </p>
+
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">Figma</li>
+                            <li class="project-tech-badge">HTML</li>
+                            <li class="project-tech-badge">CSS</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver
+                                Proyecto</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                class="project-btn btn-sub" aria-label="GitHub Repository">
+                                <span>GitHub</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto"
+                            class="project-img" loading="lazy" decoding="async">
+                        <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce"
+                            data-en="E-Commerce Platform Redesign">
+                            Rediseño de plataforma E-Commerce
+                        </h3>
+
+                        <p class="project-description"
+                            data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
+                            data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
+                            Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en
+                            simplificar el proceso de pago y mejorar la retención de usuarios.
+                        </p>
+
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">Figma</li>
+                            <li class="project-tech-badge">HTML</li>
+                            <li class="project-tech-badge">CSS</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver
+                                Proyecto</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                class="project-btn btn-sub" aria-label="GitHub Repository">
+                                <span>GitHub</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto"
+                            class="project-img" loading="lazy" decoding="async">
+                        <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce"
+                            data-en="E-Commerce Platform Redesign">
+                            Rediseño de plataforma E-Commerce
+                        </h3>
+
+                        <p class="project-description"
+                            data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
+                            data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
+                            Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en
+                            simplificar el proceso de pago y mejorar la retención de usuarios.
+                        </p>
+
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">Figma</li>
+                            <li class="project-tech-badge">HTML</li>
+                            <li class="project-tech-badge">CSS</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver
+                                Proyecto</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                class="project-btn btn-sub" aria-label="GitHub Repository">
+                                <span>GitHub</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="source/shoper-af5Oi0kOByE-unsplash.jpg" alt="Miniatura de Proyecto"
+                            class="project-img" loading="lazy" decoding="async">
+                        <span class="project-badge" data-es="Diseño UI/UX" data-en="UI/UX Design">Diseño UI/UX</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3 class="project-title" data-es="Rediseño de Plataforma E-Commerce"
+                            data-en="E-Commerce Platform Redesign">
+                            Rediseño de plataforma E-Commerce
+                        </h3>
+
+                        <p class="project-description"
+                            data-es="Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en simplificar el proceso de pago y mejorar la retención de usuarios."
+                            data-en="Complete optimization of the checkout user experience for mobile devices, focused on simplifying checkout flows and increasing user retention.">
+                            Optimización completa de la experiencia de compra en dispositivos móviles, enfocada en
+                            simplificar el proceso de pago y mejorar la retención de usuarios.
+                        </p>
+
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">Figma</li>
+                            <li class="project-tech-badge">HTML</li>
+                            <li class="project-tech-badge">CSS</li>
+                        </ul>
+
+                        <div class="project-actions">
+                            <a href="#" class="project-btn btn-main" data-es="Ver Proyecto" data-en="View Project">Ver
+                                Proyecto</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                class="project-btn btn-sub" aria-label="GitHub Repository">
+                                <span>GitHub</span>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+        </section>
+
+        <!-- ==========================
+            ABOUT ME SECTION
+    =========================== -->
+
+        <section id="about" class="about-container">
+
+
+            <header class="about-header">
+                <h2 class="about-section-title">
+                    <span data-es="Sobre " data-en="About ">Sobre </span><span class="text-orange" data-es="Mí"
+                        data-en="Me">Mí</span>
+                </h2>
+            </header>
+
+            <div class="about-content">
+                <article class="about-text-block">
+                    <h3 class="about-subtitle" data-es="&lt;Más que escribir código./&gt"
+                        data-en="<More than writing code./&gt">&lt;Más que escribir código./&gt;</h3>
+                    <p class="about-description"
+                        data-es="Un desarrollador apasionado por transformar ideas en productos digitales impactantes. No me limito a escribir código; me enfoco en diseñar experiencias intuitivas, soluciones altamente funcionales y arquitecturas limpias que garanticen la escalabilidad técnica. Mi meta es aportar valor real optimizando la intersección exacta entre la ingeniería de software y el diseño UI/UX."
+                        data-en="A developer passionate about transforming ideas into impactful digital products. I don't just write code; I focus on designing intuitive experiences, highly functional solutions, and clean architectures that guarantee technical scalability. My goal is to deliver true value by optimizing the exact intersection between software engineering and UI/UX design.">
+                        Un desarrollador apasionado por transformar ideas en productos digitales impactantes. No me
+                        limito a escribir código; me enfoco en diseñar experiencias intuitivas, soluciones altamente
+                        funcionales y arquitecturas limpias que garanticen la escalabilidad técnica. Mi meta es aportar
+                        valor real optimizando la intersección exacta entre la ingeniería de software y el diseño UI/UX.
+                    </p>
+                </article>
+
+                <aside class="about-code-window">
+                    <div class="code-window-header">
+                        <div class="code-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="code-tab-title">brayan.js</span>
+                    </div>
+                    <div class="code-window-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
                     <span class="code-line"><span class="code-property">name</span>: <span class="code-string">"Brayan"</span>,</span>
                     <span class="code-line"><span class="code-property">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>, <span class="code-string">"Python"</span>],</span>
                     <span class="code-line"><span class="code-property">passionate</span>: <span class="code-string">"UI/UX"</span>,</span>
                     <span class="code-line"><span class="code-property">caffeine</span>: <span class="code-keyword">true</span></span>
+                    <span class="code-line"><span class="code-property">bugs</span>: <span class="code-keyword">"inevitable"</span></span>
+                    <span class="code-line"><span class="code-property">mindset</span>: <span class="code-keyword">"Always Learning"</span></span>
                     };
 
                     <div class="code-status-block"><span class="code-comment">// Status: <span class="loading-animation">Loading skills...</span></span></div></code></pre>
+                    </div>
+                </aside>
+
+                <div class="about-cards-grid">
+
+                    <article class="about-value-card">
+                        <div class="card-icon-wrapper">
+                            <span class="card-number">01 ⚡</span>
+                        </div>
+                        <h4 class="card-title" data-es="Experiencia primero." data-en="Experience first.">Experiencia
+                            primero.</h4>
+                        <p class="card-text"
+                            data-es="Dominio sólido de interfaces móviles estéticas y optimizadas. Traduzco conceptos visuales a código HTML/CSS/JS impecable, priorizando la accesibilidad y el rendimiento."
+                            data-en="Solid command of beautiful, optimized mobile interfaces. I translate visual concepts into flawless HTML/CSS/JS code, prioritizing accessibility and performance.">
+                            Dominio sólido de interfaces móviles estéticas y optimizadas. Traduzco conceptos visuales a
+                            código HTML/CSS/JS impecable, priorizando la accesibilidad y el rendimiento.
+                        </p>
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">HTML</li>
+                            <li class="project-tech-badge">CSS</li>
+                            <li class="project-tech-badge">JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="about-value-card">
+                        <div class="card-icon-wrapper">
+                            <span class="card-number">02 🧠</span>
+                        </div>
+                        <h4 class="card-title" data-es="Pensamiento lógico." data-en="Logical thinking.">Pensamiento
+                            lógico.</h4>
+                        <p class="card-text"
+                            data-es="Capacidad analítica para estructurar flujos backend complejos mediante Python y Java. Enfoque directo hacia la resolución eficiente de problemas y algoritmos limpios."
+                            data-en="Analytical capacity to structure complex backend flows through Python and Java. Direct focus on efficient problem solving and clean algorithms.">
+                            Capacidad analítica para estructurar flujos backend mediante Python y Java. Enfoque directo
+                            hacia la resolución eficiente de problemas y algoritmos limpios.
+                        </p>
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">Python</li>
+                            <li class="project-tech-badge">SQL</li>
+                            <li class="project-tech-badge">Git</li>
+                        </ul>
+                    </article>
+
+                    <article class="about-value-card">
+                        <div class="card-icon-wrapper">
+                            <span class="card-number">03 🚀</span>
+                        </div>
+                        <h4 class="card-title" data-es="Aprendizaje continuo." data-en="Continuous learning.">
+                            Aprendizaje continuo.</h4>
+                        <p class="card-text"
+                            data-es="Agilidad natural para absorber nuevas tecnologías e integrarme sin fricciones a equipos de desarrollo, sumando proactividad y metodologías organizadas."
+                            data-en="Natural agility to absorb new technologies and seamlessly integrate into development teams, adding proactivity and organized methodologies.">
+                            Agilidad natural para absorber nuevas tecnologías e integrarme sin fricciones a equipos de
+                            desarrollo, sumando proactividad y metodologías organizadas.
+                        </p>
+                        <ul class="project-tags">
+                            <li class="project-tech-badge">React</li>
+                            <li class="project-tech-badge">TypeScript</li>
+                            <li class="project-tech-badge">IA</li>
+                        </ul>
+                    </article>
                 </div>
+        </section>
+
+        <!-- ==========================
+            CONTACT SECTION
+    =========================== -->
+
+        <section id="contact" class="contact-section">
+
+            <h2 class="about-section-title" data-es="Contacto" data-en="Contact">
+                Contacto
+            </h2>
+
+            <div class="contact-content">
+
+                <!-- Columna izquierda -->
+                <aside class="contact-info">
+
+                    <p class="contact-pitch" data-es="¿Tienes un proyecto en mente o quieres charlar? Escríbeme."
+                        data-en="Have a project in mind or want to chat? Drop me a line.">
+
+                        ¿Tienes un proyecto en mente o quieres charlar?
+                        <span class="text-highlight">Escríbeme.</span>
+
+                    </p>
+
+                    <p class="contact-subtitle"
+                        data-es="Si tienes una idea, un proyecto o simplemente quieres conversar sobre tecnología, estaré encantado de leerte."
+                        data-en="If you have an idea, a project, or simply want to talk about technology, I'd be happy to hear from you.">
+
+                        Si tienes una idea, un proyecto o simplemente quieres conversar sobre tecnología, estaré
+                        encantado de leerte.
+
+                    </p>
+
+                </aside>
+
+                <!-- Formulario -->
+                <form class="contact-form" onsubmit="event.preventDefault();">
+
+                    <div class="form-group">
+                        <input type="text" id="form-name" autocomplete="name" class="form-input" placeholder=" "
+                            required>
+                        <label for="form-name" class="form-label" data-es="Nombre" data-en="Name">
+                            Nombre
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="form-email" autocomplete="name" class="form-input" placeholder=" "
+                            required>
+                        <label for="form-email" class="form-label" data-es="E-Mail" data-en="E-Mail">
+                            E-Mail
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="form-message" class="form-input form-textarea" placeholder=" " rows="5"
+                            required></textarea>
+
+                        <label for="form-message" class="form-label" data-es="Mensaje" data-en="Message">
+
+                            Mensaje
+
+                        </label>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">
+
+                        <span data-es="Enviar Mensaje" data-en="Send Message">
+
+                            Enviar Mensaje
+
+                        </span>
+
+                        <svg class="btn-send-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+
+                        </svg>
+
+                    </button>
+
+                </form>
+
+                <!-- Redes -->
+                <nav class="contact-socials-grid">
+
+                    <a href="www.linkedin.com/in/brayan-castañeda-522a55236" target="_blank"
+                        aria-label="Perfil de LinkedIn de Brayan Castañeda" rel="noopener noreferrer"
+                        class="social-link-item">
+
+                        <span>LinkedIn</span>
+
+                        <span class="social-arrow">↗</span>
+
+                    </a>
+
+                    <a href="https://github.com/Stiiv5" target="_blank"
+                        aria-label="Repositorio de GitHub de Brayan Castañeda" rel="noopener noreferrer"
+                        class="social-link-item">
+
+                        <span>GitHub</span>
+
+                        <span class="social-arrow">↗</span>
+
+                    </a>
+
+                </nav>
+
             </div>
 
-        <div class="about-cards-grid">
+        </section>
 
-            <div class="about-value-card">
-                <div class="card-icon-wrapper">
-                    <span class="card-number">01</span>
-                </div>
-                <h4 class="card-title" data-es="Diseño Funcional" data-en="Functional Design">Diseño Funcional</h4>
-                <p class="card-text" 
-                   data-es="Dominio sólido de interfaces móviles estéticas y optimizadas. Traduzco conceptos visuales a código HTML/CSS/JS impecable, priorizando la accesibilidad y el rendimiento."
-                   data-en="Solid command of beautiful, optimized mobile interfaces. I translate visual concepts into flawless HTML/CSS/JS code, prioritizing accessibility and performance.">
-                    Dominio sólido de interfaces móviles estéticas y optimizadas. Traduzco conceptos visuales a código HTML/CSS/JS impecable, priorizando la accesibilidad y el rendimiento.
-                </p>
-            </div>
-
-            <div class="about-value-card">
-                <div class="card-icon-wrapper">
-                    <span class="card-number">02</span>
-                </div>
-                <h4 class="card-title" data-es="Lógica Adaptable" data-en="Adaptive Logic">Lógica Adaptable</h4>
-                <p class="card-text" 
-                   data-es="Capacidad analítica para estructurar flujos backend complejos mediante Python y Java. Enfoque directo hacia la resolución eficiente de problemas y algoritmos limpios."
-                   data-en="Analytical capacity to structure complex backend flows through Python and Java. Direct focus on efficient problem solving and clean algorithms.">
-                    Capacidad analítica para estructurar flujos backend mediante Python y Java. Enfoque directo hacia la resolución eficiente de problemas y algoritmos limpios.
-                </p>
-            </div>
-
-            <div class="about-value-card">
-                <div class="card-icon-wrapper">
-                    <span class="card-number">03</span>
-                </div>
-                <h4 class="card-title" data-es="Evolución Rápida" data-en="Fast Evolution">Evolución Rápida</h4>
-                <p class="card-text" 
-                   data-es="Agilidad natural para absorber nuevas tecnologías e integrarme sin fricciones a equipos de desarrollo, sumando proactividad y metodologías organizadas."
-                   data-en="Natural agility to absorb new technologies and seamlessly integrate into development teams, adding proactivity and organized methodologies.">
-                    Agilidad natural para absorber nuevas tecnologías e integrarme sin fricciones a equipos de desarrollo, sumando proactividad y metodologías organizadas.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- /* CONTACT SECTION */ -->
-
-    <section id="contact" class="contact-section">
-
-    <h2 class="about-section-title"
-        data-es="Contacto"
-        data-en="Contact">
-        Contacto
-    </h2>
-
-    <div class="contact-content">
-
-        <!-- Columna izquierda -->
-        <div class="contact-info">
-
-            <p class="contact-pitch"
-                data-es="¿Tienes un proyecto en mente o quieres charlar? Escríbeme."
-                data-en="Have a project in mind or want to chat? Drop me a line.">
-
-                ¿Tienes un proyecto en mente o quieres charlar?
-                <span class="text-highlight">Escríbeme.</span>
-
+        <footer class="app-footer">
+            <div class="footer-divider"></div>
+            <p class="footer-credits">
+                © 2026 • Brayan Castañeda. <span data-es="Hecho con" data-en="Made with">Hecho con</span> ♥ <span
+                    data-es="y Cafeína" data-en="and Caffeine">y Cafeína.</span>
             </p>
-
-            <p class="contact-subtitle"
-                data-es="Siempre estoy abierto a discutir nuevas ideas o colaborar."
-                data-en="I'm always open to discussing new ideas or collaborating.">
-
-                Siempre estoy abierto a discutir nuevas ideas o colaborar.
-
+            <p class="footer-credits footer-avaliable" data-es="Hecho con"
+                data-en="Available • Frontend • Bogotá, Colombia">
+                Disponible • Frontend • Bogotá, Colombia
             </p>
+        </footer>
 
-        </div>
-
-        <!-- Formulario -->
-        <form class="contact-form" autocomplete="off" onsubmit="event.preventDefault();">
-
-            <div class="form-group">
-                <input type="text" id="form-name" class="form-input" placeholder=" " required>
-                <label for="form-name" class="form-label"
-                    data-es="Nombre"
-                    data-en="Name">
-                    Nombre
-                </label>
-            </div>
-
-            <div class="form-group">
-                <input type="email" id="form-email" class="form-input" placeholder=" " required>
-                <label for="form-email" class="form-label"
-                    data-es="E-Mail"
-                    data-en="E-Mail">
-                    E-Mail
-                </label>
-            </div>
-
-            <div class="form-group">
-                <textarea id="form-message"
-                    class="form-input form-textarea"
-                    placeholder=" "
-                    required></textarea>
-
-                <label for="form-message"
-                    class="form-label"
-                    data-es="Mensaje"
-                    data-en="Message">
-
-                    Mensaje
-
-                </label>
-            </div>
-
-            <button type="submit" class="form-submit-btn">
-
-                <span
-                    data-es="Enviar Mensaje"
-                    data-en="Send Message">
-
-                    Enviar Mensaje
-
-                </span>
-
-                <svg class="btn-send-icon"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round">
-
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-
-                </svg>
-
-            </button>
-
-        </form>
-
-        <!-- Redes -->
-        <div class="contact-socials-grid">
-
-            <a href="https://linkedin.com/in/tuusuario"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-link-item">
-
-                <span>LinkedIn</span>
-
-                <span class="social-arrow">↗</span>
-
-            </a>
-
-            <a href="https://github.com/tuusuario"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social-link-item">
-
-                <span>GitHub</span>
-
-                <span class="social-arrow">↗</span>
-
-            </a>
-
-        </div>
-
+        <script src="/js/main.js"></script>
     </div>
+</body>
 
-</section>
-
-    <footer class="app-footer">
-        <div class="footer-divider"></div>
-        <p class="footer-credits">
-            © 2026 • Brayan Castañeda. <span data-es="Hecho con" data-en="Made with">Hecho con</span> ♥ <span data-es="y Cafeína" data-en="and Caffeine">y Cafeína</span>
-        </p>
-    </footer>
-
-    <script src="/Portafolio-Brayan-C/js/main.js"></script>
-    </div>
-  </body>
 </html>
-
-

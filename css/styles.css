@@ -384,7 +384,6 @@ body.light-mode .btn-secondary:hover {
     z-index: 2;
     animation: rotarTexto 20s linear infinite;
     pointer-events: none;
-    line-height: ;
 }
 
 .avatar-photo {
@@ -485,6 +484,7 @@ body.light-mode .btn-secondary:hover {
     display: flex;
     flex-direction: column;
     gap: var(--space-xl);
+    
 }
 
 .project-card {
@@ -495,7 +495,7 @@ body.light-mode .btn-secondary:hover {
     display: flex;
     flex-direction: column;
     transition: border-color var(--trans-default);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .project-image-wrapper {
@@ -592,6 +592,7 @@ body.light-mode .btn-secondary:hover {
 .project-btn.btn-main {
     background-color: var(--acento-brillante);
     color: #FFFFFF;
+    text-align: center;
 }
 
 .project-btn.btn-main:hover {
@@ -959,6 +960,7 @@ body.light-mode .form-input {
     color: var(--texto-secundario);
     font-size: 13px;
     text-decoration: none;
+    box-shadow: var(--shadow-sm);
     transition: transform var(--trans-default), border-color var(--trans-default), color var(--trans-default), background-color var(--trans-default);
 }
 
@@ -1272,7 +1274,6 @@ body.light-mode .social-link-item:hover {
         flex: 1 1 70%;
         max-width: 800px;
         align-items: center;
-        padding-bottom: ;
     }
 
     .hero-title,

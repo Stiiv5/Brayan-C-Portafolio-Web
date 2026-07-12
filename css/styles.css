@@ -231,6 +231,7 @@ body.light-mode .btn-secondary:hover {
     gap: 10px;
     position: absolute;
     top: 0;
+    right: 0;
 }
 
 .social-btn {
@@ -471,7 +472,7 @@ body.light-mode .navbar {
     color: var(--texto-secundario);
     padding: var(--space-sm) 18px;
     border-radius: 20px;
-    font-size: var(--text-lg);
+    font-size: var(--text-sm);
     font-weight: 500;
     border: 1px solid var(--borde);
     transition: all var(--trans-default);
@@ -687,7 +688,7 @@ body.light-mode .project-btn.btn-sub:hover {
 }
 
 .about-description {
-    font-size: var(--text-xl);
+    font-size: var(--text-base);
     line-height: 1.6;
     color: var(--texto-secundario);
 }
@@ -858,7 +859,7 @@ body.light-mode .about-code-window {
 
 .contact-section .about-section-title {
     text-align: center;
-    margin-bottom: var(--space-3xl);
+    margin-bottom: var(--space-2xl);
 }
 
 .contact-pitch {
@@ -1207,7 +1208,7 @@ body.light-mode .social-link-item:hover {
     }
 
     .contact-pitch {
-        font-size: 17px;
+        font-size: var(17px);
     }
 
     .contact-subtitle {
@@ -1372,19 +1373,19 @@ body.light-mode .social-link-item:hover {
     /* ----------- CONTACT ------- */
 
     .contact-section {
-        padding: 60px 32px 32px 32px;
+        padding: 60px 32px 20px 32px;
         margin-top: 40px;
     }
 
     .contact-pitch {
-        font-size: 1.25rem;
+        font-size: var(--text-xl);
         line-height: 1.5;
         max-width: 600px;
         margin: 0 auto 12px auto;
     }
 
     .contact-subtitle {
-        font-size: 0.95rem;
+        font-size: var(--text-base);
         margin-bottom: 40px;
     }
 

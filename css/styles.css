@@ -37,6 +37,7 @@
     --space-xl: 32px;
     --space-2xl: 48px;
     --space-3xl: 64px;
+    --space-4xl: 72px;
 
     /* Border Radius */
     --radius-sm: 4px;
@@ -235,8 +236,8 @@ body.light-mode .btn-secondary:hover {
 }
 
 .social-btn {
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     background-color: var(--bg-principal);
     border: 1px solid var(--borde);
     border-radius: 50%;
@@ -314,6 +315,13 @@ body.light-mode .navbar {
     cursor: pointer;
     width: 48px;
     height: 48px;
+}
+
+.control-btn svg {
+    width: 48px;
+    height: 48px;
+    color: #FFD43B;
+    transition: .3s;
 }
 
 /* ==========================================================================
@@ -682,7 +690,7 @@ body.light-mode .project-btn.btn-sub:hover {
 }
 
 .about-subtitle {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
     font-weight: 600;
     color: var(--texto-principal);
 }
@@ -794,6 +802,249 @@ body.light-mode .about-code-window {
     animation: codePulse 1.8s infinite ease-in-out;
 }
 
+.about-journey {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+}
+
+.about-journey-header {
+    text-align: center;
+}
+
+.about-journey-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+.about-journey-grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.about-timeline-education, .about-timeline-experience {
+    position: relative;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm);
+    padding: var(--space-lg);
+    transition: transform var(--trans-default), border-color var(--trans-default), box-shadow var(--trans-default);
+}
+
+.about-timeline-education:hover, .about-timeline-experience:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 104, 3, .35);
+    box-shadow: var(--shadow-md);
+}
+
+.about-timeline-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.about-timeline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 104, 3, .12);
+    color: var(--acento-brillante);
+
+    flex-shrink: 0;
+}
+
+.about-timeline-icon svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+.about-timeline-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+.about-timeline-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.about-timeline-content::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: rgba(255, 104, 3, .25);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: .45rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--acento-brillante);
+    border: 3px solid var(--bg-superficie);
+}
+
+.timeline-year {
+    display: inline-block;
+    margin-bottom: .45rem;
+    font-size: var(--text-xs);
+    color: var(--acento-brillante);
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.timeline-item-title {
+    color: var(--texto-principal);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: .35rem;
+}
+
+.timeline-item-subtitle {
+    color: var(--texto-secundario);
+    font-size: .9rem;
+    margin-bottom: .6rem;
+}
+
+.timeline-item-description {
+    color: var(--texto-secundario);
+    line-height: 1.7;
+    font-size: .95rem;
+}
+
+/* ==========================================================================
+   ABOUT CERTIFICATIONS
+========================================================================== */
+
+.about-certifications {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    margin-top: var(--space-3xl);
+}
+
+.about-certifications-header {
+    text-align: center;
+}
+
+.about-certifications-title {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+.about-certifications-grid {
+    display: grid;
+    gap: var(--space-lg);
+}
+
+.about-certificate-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: var(--space-lg);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--trans-default),
+        border-color var(--trans-default),
+        box-shadow var(--trans-default);
+}
+
+.about-certificate-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 104, 3, .35);
+    box-shadow: var(--shadow-md);
+}
+
+.certificate-year {
+    align-self: flex-start;
+    padding: .35rem .75rem;
+    border-radius: 999px;
+    background: rgba(255, 104, 3, .12);
+    color: var(--acento-brillante);
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+}
+
+.about-certificate-title {
+    color: var(--texto-principal);
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.about-certificate-provider {
+    color: var(--texto-secundario);
+    font-size: .92rem;
+    line-height: 1.6;
+}
+
+.about-cards-badge {
+    align-items: flex-start;
+    margin-top: auto;
+    padding: .45rem .9rem;
+    border-radius: 999px;
+    background: rgba(255, 104, 3, .12);
+    color: var(--acento-brillante);
+    font-size: .78rem;
+    font-weight: 500;
+    transform: background var(--trans-default), color var(--trans-default);
+}
+
+.about-certificate-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    background: linear-gradient(90deg, transparent, var(--acento-brillante), transparent);
+    opacity: 0;
+    transition: opacity var(--trans-default);
+}
+
+.about-certificate-card:hover::before {
+    opacity: 1;
+}
+
 /* About Cards */
 .about-cards-grid {
     display: flex;
@@ -845,6 +1096,7 @@ body.light-mode .about-code-window {
     line-height: 1.5;
     color: var(--texto-secundario);
 }
+
 
 /* ==========================================================================
    10. COMPONENTES: CONTACTO Y FOOTER
@@ -1187,10 +1439,6 @@ body.light-mode .social-link-item:hover {
         font-size: 2.4rem;
     }
 
-    .about-subtitle {
-        font-size: 1.5rem;
-    }
-
     .about-value-card {
         padding: 32px;
     }
@@ -1248,6 +1496,11 @@ body.light-mode .social-link-item:hover {
     .app-lienzo {
         max-width: 960px;
         padding: 32px;
+    }
+
+    .control-btn {
+        width: 48px;
+        height: 48px;
     }
 
     .navbar {
@@ -1357,18 +1610,36 @@ body.light-mode .social-link-item:hover {
         font-size: 1.05rem;
     }
 
+    .about-journey-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    .about-timeline-education, .about-timeline-experience {
+        height: 100%;
+    }
+
+    .about-certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
     .about-cards-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 24px;
         margin-top: 32px;
     }
 
+    
     .about-value-card {
         padding: 28px;
         height: 100%;
     }
-
+    
+    .about-value-card:last-child {
+        grid-column: span 2;
+    }
 
     /* ----------- CONTACT ------- */
 
@@ -1656,6 +1927,39 @@ body.light-mode .social-link-item:hover {
         justify-self: center;
     }
 
+    .about-journey {
+        margin-top: var(--space-4xl);
+    }
+
+    .about-journey-grid {
+        gap: var(--space-xl);
+    }
+
+    .about-timeline-education, .about-timeline-experience {
+        padding: var(--space-xl);
+    }
+
+    .timeline-item {
+        padding-left: 2.4rem;
+    }
+
+    .timeline-item::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .about-timeline-title{
+        font-size: 1.35rem;
+    }
+
+    .about-certifications-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-certificate-card {
+        min-height: 220px;
+    }
+
     .about-cards-grid {
         grid-column: 1 / -1;
     }
@@ -1723,3 +2027,39 @@ body.light-mode .social-link-item:hover {
         margin-top: 8px;
     }
 }
+
+/* @media (min-heigth: 1440px){
+    .about-journey {
+        gap: var(--space-2xl);
+    }
+
+    .about-journey-grid {
+        gap: var(--space-2xl);
+    }
+
+    .about-timeline-education,
+    .about-timeline-experience {
+        padding: var(--space-2xl);
+    }
+
+    .timeline-item-title {
+        font-size: 1.05rem;
+    }
+
+    .timeline-item-description {
+        max-width: 95%;
+    }
+
+    .about-certifications-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .about-cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-value-card:last-child {
+        grid-column: auto;
+    }
+
+} */

@@ -364,6 +364,7 @@ body.light-mode .navbar {
 .hero-left {
     display: flex;
     flex-direction: column;
+    padding: var(--space-md);
 
 }
 
@@ -517,7 +518,7 @@ body.light-mode .navbar {
     font-size: var(--text-3xl);
     font-weight: 700;
     line-height: 1.2;
-    padding: 60px 0;
+    padding-top: 20px;
 }
 
 .projects-grid {
@@ -657,7 +658,7 @@ body.light-mode .project-btn.btn-sub:hover {
    9. COMPONENTES: SOBRE MÍ (ABOUT)
 ========================================================================== */
 .about-container {
-    padding: 60px var(--space-md);
+    padding: 20px var(--space-md);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -674,7 +675,9 @@ body.light-mode .project-btn.btn-sub:hover {
     font-weight: 700;
     color: var(--texto-principal);
     letter-spacing: -0.5px;
+    padding-top: 60px;
 }
+
 
 .about-content {
     display: flex;
@@ -802,6 +805,7 @@ body.light-mode .about-code-window {
     animation: codePulse 1.8s infinite ease-in-out;
 }
 
+
 .about-journey {
     display: flex;
     flex-direction: column;
@@ -819,6 +823,19 @@ body.light-mode .about-code-window {
     color: var(--texto-principal);
 }
 
+.about-cards-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.about-cards-title {    
+    font-size: var(--text-xl);
+    font-weight: 700;
+    color: var(--texto-principal);
+}
+
+
 .about-journey-grid {
     display: grid;
     gap: var(--space-lg);
@@ -832,7 +849,7 @@ body.light-mode .about-code-window {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: var(--shadow-sm);
-    padding: var(--space-lg);
+    padding: var(--space-xl);
     transition: transform var(--trans-default), border-color var(--trans-default), box-shadow var(--trans-default);
 }
 
@@ -1045,14 +1062,15 @@ body.light-mode .about-code-window {
     opacity: 1;
 }
 
+
 /* About Cards */
 .about-cards-grid {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    margin-top: var(--space-md);
 }
+
 
 .about-value-card {
     background-color: var(--bg-superficie);
@@ -1104,12 +1122,22 @@ body.light-mode .about-code-window {
 .contact-section {
     display: flex;
     flex-direction: column;
-    padding: 40px var(--space-md) 20px var(--space-md);
+    padding: 0 var(--space-md) 20px var(--space-md);
     margin-top: 20px;
     width: 100%;
 }
 
-.contact-section .about-section-title {
+.contact-section-title {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--texto-principal);
+    letter-spacing: -0.5px;
+    padding: var(--space-xl) 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-section-title .about-section-title {
     text-align: center;
     margin-bottom: var(--space-2xl);
 }
@@ -1128,7 +1156,9 @@ body.light-mode .about-code-window {
     color: var(--texto-secundario);
     text-align: center;
     margin-bottom: 28px;
+    padding-top: 12px;
     line-height: 1.4;
+    
 }
 
 /* Formulario */
@@ -1427,6 +1457,7 @@ body.light-mode .social-link-item:hover {
 
     .projects-section-title {
         font-size: 2.4rem;
+        padding: 20px 0;
     }
 
     .projects-container {
@@ -1437,6 +1468,7 @@ body.light-mode .social-link-item:hover {
 
     .about-section-title {
         font-size: 2.4rem;
+        padding: 20px;
     }
 
     .about-value-card {
@@ -1463,6 +1495,11 @@ body.light-mode .social-link-item:hover {
         font-size: 15px;
     }
 
+    .about-container {
+        padding: 60px 32px;
+        gap: 32px;
+    }
+
     .about-content {
         justify-content: center;
         align-items: center;
@@ -1480,6 +1517,10 @@ body.light-mode .social-link-item:hover {
 
     .contact-pitch {
         margin-bottom: 15px;
+    }
+
+    .contact-section-title {
+        padding-bottom: 40px;
     }
 
 }
@@ -1550,6 +1591,7 @@ body.light-mode .social-link-item:hover {
 
     .projects-section-title {
         font-size: 2.4rem;
+        padding: var(--space-md);
     }
 
     .projects-grid {
@@ -1590,12 +1632,20 @@ body.light-mode .social-link-item:hover {
     /* -------- ABOUT ME ---------- */
 
     .about-container {
-        padding: 80px 32px;
+        padding: 40px 32px;
         gap: 56px;
     }
 
     .about-section-title {
+        font-size: var(--text-3xl);
         letter-spacing: -0.8px;
+        margin-top: 32px;
+    }
+
+    .contact-section-title {        
+        letter-spacing: -0.8px;
+        margin-top: 40px;
+        font-size: var(--text-3xl);
     }
 
     .about-content {
@@ -1608,6 +1658,11 @@ body.light-mode .social-link-item:hover {
 
     .about-description {
         font-size: 1.05rem;
+    }
+
+    .about-code-window {
+        width: 60%;
+        max-width: 60%;
     }
 
     .about-journey-grid {
@@ -1638,18 +1693,20 @@ body.light-mode .social-link-item:hover {
     }
     
     .about-value-card:last-child {
-        grid-column: span 2;
+        grid-column: 1 / -1;
+        width: calc(50% - 12px);
+        justify-self: center;
     }
 
     /* ----------- CONTACT ------- */
 
     .contact-section {
-        padding: 60px 32px 20px 32px;
+        padding: 20px 32px 20px 32px;
         margin-top: 40px;
     }
 
     .contact-pitch {
-        font-size: var(--text-xl);
+        font-size: 1.4rem;
         line-height: 1.5;
         max-width: 600px;
         margin: 0 auto 12px auto;
@@ -1847,6 +1904,11 @@ body.light-mode .social-link-item:hover {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .projects-section-title {
+        font-size: var(--text-3xl);
+        padding-top: 100px;
+    }
+
     /* BENTO LAYOUT */
     .project-card:nth-child(1) {
         grid-column: span 3;
@@ -1899,10 +1961,20 @@ body.light-mode .social-link-item:hover {
     /* About */
     .about-container {
         max-width: 1440px;
-        margin: 20px auto;
+        margin: 20px auto;        
         padding: 80px var(--space-2xl) 30px var(--space-2xl);
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: 7fr 4fr;
+    }
+
+    .about-section-title {
+        margin: 0;
+        padding-top: 30px;
+    }
+
+    .contact-section-title {
+        margin-top: 0;
+        padding: 40px 0 60px 0;
     }
 
     .about-header {
@@ -1923,15 +1995,33 @@ body.light-mode .social-link-item:hover {
     }
 
     .about-code-window {
+        width: 80%;
         max-width: 450px;
         justify-self: center;
     }
 
+
     .about-journey {
-        margin-top: var(--space-4xl);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1 / 2;
+        margin-top: var(--space-2xl);
     }
 
+    .about-certifications {
+        grid-column: 2 / 3;
+        margin-top: var(--space-3xl);
+    }
+
+    .about-cards-grid {
+        grid-column:  1 / -1;
+        margin-top: var(--space-xl)
+
+    }    
+
     .about-journey-grid {
+        display:grid;
+        grid-template-columns:1fr;
         gap: var(--space-xl);
     }
 
@@ -1950,7 +2040,7 @@ body.light-mode .social-link-item:hover {
 
     .about-timeline-title{
         font-size: 1.35rem;
-    }
+    }    
 
     .about-certifications-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1959,6 +2049,7 @@ body.light-mode .social-link-item:hover {
     .about-certificate-card {
         min-height: 220px;
     }
+   
 
     .about-cards-grid {
         grid-column: 1 / -1;
@@ -1991,7 +2082,7 @@ body.light-mode .social-link-item:hover {
     }
 
     .contact-pitch {
-        font-size: var(--text-3xl);
+        font-size: 2rem;
         text-align: left;
         margin-bottom: var(--space-lg);
         padding: 0;
@@ -2027,39 +2118,3 @@ body.light-mode .social-link-item:hover {
         margin-top: 8px;
     }
 }
-
-/* @media (min-heigth: 1440px){
-    .about-journey {
-        gap: var(--space-2xl);
-    }
-
-    .about-journey-grid {
-        gap: var(--space-2xl);
-    }
-
-    .about-timeline-education,
-    .about-timeline-experience {
-        padding: var(--space-2xl);
-    }
-
-    .timeline-item-title {
-        font-size: 1.05rem;
-    }
-
-    .timeline-item-description {
-        max-width: 95%;
-    }
-
-    .about-certifications-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .about-cards-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .about-value-card:last-child {
-        grid-column: auto;
-    }
-
-} */

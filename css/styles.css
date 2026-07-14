@@ -968,7 +968,7 @@ body.light-mode .about-code-window {
     display: flex;
     flex-direction: column;
     gap: var(--space-xl);
-    margin-top: var(--space-3xl);
+    margin-top: var(--space-xl);
 }
 
 .about-certifications-header {

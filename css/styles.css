@@ -364,7 +364,7 @@ body.light-mode .navbar {
 .hero-left {
     display: flex;
     flex-direction: column;
-    padding: var(--space-md);
+    padding: var(--space-sm);
 
 }
 

@@ -535,9 +535,11 @@ body.light-mode .navbar {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: border-color var(--trans-default);
+    transition: transform var(--trans-default), border-color var(--trans-default), box-shadow var(--trans-default);
     box-shadow: var(--shadow-md);
+    will-change: transform, box-shadow;
 }
+
 
 .project-image-wrapper {
     position: relative;
@@ -555,9 +557,31 @@ body.light-mode .navbar {
     height: 90%;
     object-fit: cover;
     opacity: 0.85;
-    transition: opacity var(--trans-default);
+    transition: opacity var(--trans-default),
+    transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     border-radius: var(--radius-lienzo);
     box-shadow: var(--shadow-md);
+}
+
+/* ==========================================================================
+   EFECTO HOVER INDIVIDUAL
+   ========================================================================== */
+@media (hover: hover) { /* Se activa solo en dispositivos que usan ratón (evita bugs en móvil) */
+       
+    .project-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 104, 3, .35);
+        box-shadow: var(--shadow-md);
+
+                    
+    border-color: rgba(255, 104, 3, .35);
+    box-shadow: var(--shadow-md);
+    }
+
+    /* 2. Zoom elegante en la imagen */
+    .project-card:hover .project-img {
+        transform: scale(1.05);
+    }
 }
 
 .project-badge {
